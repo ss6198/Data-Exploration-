@@ -2,48 +2,40 @@
 <html lang="en">
 
 <head>
-    <!-- STEP 1: Set up the webpage -->
-    <!-- Tell the browser that this document uses HTML5. -->
-    <!-- Set the language to English and allow special characters to display correctly. -->
+  
     <meta charset="UTF-8">
 
-    <!-- Set the title that appears in the browser tab. -->
-    <title>Arsenical Materials of 19th c. Bookbindings per Decade </title>
+    <!-- title -->
+<title>Arsenical Materials of 19th c. Bookbindings per Decade</title>
 
-    <!-- Change the font of the webpage and chart -->
-    <!-- Use a softer, book-inspired font for the webpage. -->
-    <!-- The text color is dark gray instead of black. -->
-    <style>
+<!-- font -->
+<style>
         body {
-            font-family: Palatino, "Palatino Linotype", Georgia, serif;
-            color: #1B3427;
+            font-family: Palatino, serif;
+            color: #2c4c3b;
         }
 
         /* Apply the same font and color to the chart's axis labels and text. */
         svg text {
-            font-family: Palatino, "Palatino Linotype", Georgia, serif;
-            fill: #1B3427;
+            font-family: Palatino, serif;
+            fill: #2c4c3b;
         }
     </style>
 </head>
 
 <body>
 
-    <!-- STEP 2: Add the title and subtitle -->
-    <!-- h1 creates the main heading at the top of the webpage. -->
+    <!-- Add subtitle -->
+    <!-- title and subtitle  -->
     <h1>Arsenical Materials of 19th c. Bookbindings per Decade </h1>
 <p>
     Each circle represents a material category within a publication decade, with larger circles indicating more book records.
 </p>
 
-    <!-- STEP 3: Create a space for the chart -->
-    <!-- This empty div is where D3 will create the SVG visualization. -->
-    <!-- The id "chart" connects to d3.select("#chart") in script.js. -->
+    
     <div id="chart"></div>
 
-    <!-- STEP 4: Cite the data source -->
-    <!-- Provide a link to the original dataset so viewers know where the data came from. -->
-    <!-- The a tag creates a clickable link to the Poison Book Project website. -->
+    <!--  data source -->
     <p>
         Data source:
         <a href="https://sites.udel.edu/poisonbookproject/resources/arsenical-books-database/">
@@ -51,12 +43,10 @@
         </a>
     </p>
 
-    <!-- STEP 5: Load D3 and JavaScript -->
-    <!-- Load D3 version 7, the JavaScript library used to create the visualization. -->
+    
     <script src="https://d3js.org/d3.v7.min.js"></script>
 
-    <!-- Load our own JavaScript file, which reads the CSV and draws the chart. -->
-    <!-- D3 must be loaded first because script.js uses D3 functions. -->
+   
     <script src="script.js"></script>
 
 </body>
